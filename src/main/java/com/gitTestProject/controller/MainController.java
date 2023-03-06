@@ -19,4 +19,10 @@ public class MainController {
     {
         return "delete";
     }
+
+    @GetMapping
+    public String get()
+    {
+        return "get";
+    }
 }
