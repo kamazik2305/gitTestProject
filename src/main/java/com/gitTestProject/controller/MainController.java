@@ -5,25 +5,25 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class MainController {
 
-    @PostMapping
+    @PostMapping("/main")
     public String main()
     {
         return  "main";
     }
 
-    @DeleteMapping
+    @DeleteMapping("/main")
     public String delete()
     {
         return "delete";
     }
 
-    @GetMapping
+    @GetMapping("/main")
     public String get()
     {
         return "get";
     }
 
-    @PutMapping
+    @PutMapping("/main")
     public String puy()
     {
         return "put";
