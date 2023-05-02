@@ -1,9 +1,12 @@
 package com.gitTestProject.controller;
 
+import com.gitTestProject.service.MainService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class MainController {
+
+    private MainService service;
 
     @PostMapping("/main")
     public String main() {
@@ -23,5 +26,11 @@ public class MainController {
     @PutMapping("/main")
     public String puy() {
         return "put";
+    }
+
+    @GetMapping("/service")
+    public String returnServiceStr()
+    {
+        return service.returnStr();
     }
 }
