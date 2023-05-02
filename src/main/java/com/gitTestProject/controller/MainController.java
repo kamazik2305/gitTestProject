@@ -8,11 +8,13 @@ public class MainController {
 
     private MainService service;
 
+    //fixme
     @PostMapping("/main")
     public String main() {
         return "main";
     }
 
+    //todo modify that
     @DeleteMapping("/main")
     public String delete() {
         return "delete";
